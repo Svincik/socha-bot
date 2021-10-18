@@ -13,7 +13,6 @@ bot = Discordrb::Commands::CommandBot.new token: $settings['token'], prefix: $se
 
 bot.message(contains: "soch") do |event|
   event.respond 'https://cdn.discordapp.com/emojis/882892339566227466.png'
-  event.message.reactions
 end
 
 bot.command(:ping) do |event|
